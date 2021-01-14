@@ -6,12 +6,12 @@ let driving = { (Place:String) in
 driving("London")
 
 
-func travel(action: () -> Void) {
-    print("I'm getting ready to go.")
-    action
-    print("I've arrived!")
+
+func animate (duration:Double , animations: () -> Void){
+    print("Starting a \(duration) second animation.")
+    animations()
 }
 
-travel {
-    print("I'm driving in my car.")
+animate(duration: 3) {
+    print("Fade out the image.")
 }
