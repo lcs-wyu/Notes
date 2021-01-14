@@ -5,14 +5,13 @@ let driving = { (Place:String) in
 }
 driving("London")
 
-let drivingAgain = {
-    print("I'm driving in my car")
-}
 
-func travel(action: () ) {
+func travel(action: () -> Void) {
     print("I'm getting ready to go.")
     action
     print("I've arrived!")
 }
 
-travel(action: drivingAgain())
+travel {
+    print("I'm driving in my car.")
+}
