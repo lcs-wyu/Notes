@@ -31,3 +31,7 @@ home.y
 
 school.x
 school.y
+
+school.x = 8
+
+home.x
